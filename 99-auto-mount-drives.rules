@@ -1,0 +1,1 @@
+KERNEL=="sd[a-z][0-9]", ACTION=="add", RUN+="/usr/bin/systemctl start auto-mount-drives.service"

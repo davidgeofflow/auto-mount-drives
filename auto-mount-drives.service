@@ -1,0 +1,13 @@
+[Unit]
+Description=Auto Mount Drives
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/auto-mount-drives
+User=root
+Group=root
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
